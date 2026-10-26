@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EIA PV – FV Business</title>
+<meta name="description" content="FV Business, l'app per preventivi fotovoltaici professionali su iPhone, iPad e Mac. Beta gratuita.">
+<link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="icona.png">
+<style>
+:root{--blu:#4073F5;--viola:#A354E8;--rosa:#ED73C7;--testo:#1d2333;--testo2:#5d6475;--sfondo:#fbfbfe;--card:#ffffffcc;--linea:#e6e7f0}
+@media (prefers-color-scheme:dark){:root{--testo:#eef0f7;--testo2:#a7adbd;--sfondo:#0f1118;--card:#1a1d28cc;--linea:#2a2e3d}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,sans-serif;color:var(--testo);background:var(--sfondo);line-height:1.6;overflow-x:hidden}
+.veli{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.veli span{position:absolute;width:140vw;height:38vh;left:-20vw;border-radius:50%;filter:blur(60px);opacity:.28}
+.veli span:nth-child(1){top:-12vh;background:linear-gradient(90deg,var(--blu),var(--viola));transform:rotate(-8deg)}
+.veli span:nth-child(2){top:22vh;background:linear-gradient(90deg,#4dbdf5,#786eff,var(--viola));opacity:.16;transform:rotate(6deg)}
+.veli span:nth-child(3){bottom:-18vh;background:linear-gradient(90deg,var(--viola),var(--rosa));opacity:.18;transform:rotate(-4deg)}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+header a.marchio{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--testo);font-weight:800;letter-spacing:.5px}
+header img{width:36px;height:36px;border-radius:9px}
+nav a{color:var(--testo2);text-decoration:none;font-size:.92rem;margin-left:18px}nav a:hover{color:var(--viola)}
+.hero{text-align:center;padding:48px 0 24px}
+.hero img.logo{width:min(460px,88%);height:auto}
+.beta{display:inline-block;margin:18px 0 6px;padding:4px 14px;border-radius:99px;color:#fff;font-weight:800;font-size:.75rem;letter-spacing:2px;background:linear-gradient(90deg,var(--blu),var(--viola))}
+h1{font-size:clamp(1.6rem,4.6vw,2.5rem);line-height:1.2;margin:14px 0 10px;letter-spacing:-.5px}
+.grad{background:linear-gradient(90deg,var(--blu),var(--viola));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sotto{color:var(--testo2);font-size:1.08rem;max-width:620px;margin:0 auto 28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:14px;font-weight:700;text-decoration:none;color:#fff;background:linear-gradient(90deg,var(--blu),var(--viola));box-shadow:0 8px 24px #a354e840}
+.btn.sec{background:transparent;color:var(--viola);box-shadow:none;border:1.5px solid var(--viola);margin-left:10px}
+.nota{font-size:.85rem;color:var(--testo2);margin-top:12px}
+.griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:40px 0}
+.card{background:var(--card);border:1px solid var(--linea);border-radius:18px;padding:22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.card .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;background:linear-gradient(135deg,var(--blu),var(--viola));margin-bottom:10px}
+.card h3{margin:0 0 6px;font-size:1.05rem}.card p{margin:0;color:var(--testo2);font-size:.95rem}
+h2{font-size:1.5rem;margin:48px 0 14px;letter-spacing:-.3px}
+ol.passi{padding-left:20px;color:var(--testo2)}ol.passi li{margin:6px 0}ol.passi b{color:var(--testo)}
+.doc{max-width:760px;margin:0 auto;padding:24px 0 40px}
+.doc h1{font-size:clamp(1.6rem,4vw,2.1rem)}
+.doc h2{font-size:1.12rem;margin:26px 0 6px;color:var(--viola)}
+.doc p{margin:0;color:var(--testo);white-space:pre-line}
+footer{border-top:1px solid var(--linea);margin-top:56px;padding:22px 0 34px;color:var(--testo2);font-size:.88rem;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:var(--testo2)}
+@media (max-width:520px){nav a{margin-left:12px;font-size:.85rem}.btn.sec{margin:10px 0 0}.hero{padding-top:28px}}
+</style></head>
+<body><div class="veli"><span></span><span></span><span></span></div>
+<div class="wrap">
+<header><a class="marchio" href="index.html"><img src="icona.png" alt="">EIA PV</a>
+<nav><a href="index.html#beta">Beta</a><a href="privacy.html">Privacy</a><a href="termini.html">Termini</a></nav></header>
+
+<section class="hero">
+<img class="logo" src="logo.png" alt="EIA PV – Engineering &amp; Intelligence Alliance">
+<div><span class="beta">BETA GRATUITA</span></div>
+<h1>Preventivi fotovoltaici <span class="grad">professionali</span>,<br>in pochi minuti.</h1>
+<p class="sotto">FV Business è l'app per installatori e agenti: dai consumi del cliente al PDF completo con produzione, computo, piano economico e incentivi. Su iPhone, iPad e Mac.</p>
+<a class="btn" href="mailto:supporto.eia@gmail.com?subject=Richiesta%20accesso%20beta%20FV%20Business&amp;body=Ciao, vorrei provare la beta di FV Business.%0D%0A%0D%0ANome e cognome:%0D%0AAzienda:%0D%0ACittà:%0D%0ADispositivo (iPhone / iPad / Mac):%0D%0AEmail del mio Apple ID (per l%27invito TestFlight):">Richiedi l'accesso alla beta</a>
+<p class="nota">Gratuita durante la beta · Nessuna registrazione · I dati restano sul tuo dispositivo</p>
+</section>
+
+<section class="griglia">
+<div class="card"><div class="ic">1</div><h3>Analisi dei consumi</h3><p>Fasce F1, F2, F3 e profilo del cliente: capisci subito quanto e quando consuma.</p></div>
+<div class="card"><div class="ic">2</div><h3>Coperture sulla mappa</h3><p>Disegni le falde sulla mappa, scegli moduli e inverter dal tuo listino, con producibilità da PVGIS.</p></div>
+<div class="card"><div class="ic">3</div><h3>Computo e prezzi</h3><p>Computo metrico automatico o personalizzato, prezzo al kW, voci incluse ed escluse.</p></div>
+<div class="card"><div class="ic">4</div><h3>Piano economico</h3><p>Risparmio, rientro, flussi a 25 anni, prezzi zonali GME e incentivi con collegamenti al GSE.</p></div>
+<div class="card"><div class="ic">5</div><h3>PDF da consegnare</h3><p>Studio descrittivo con indice, grafici, mappe e schede tecniche, con il tuo logo.</p></div>
+<div class="card"><div class="ic">6</div><h3>CRM clienti</h3><p>Anagrafiche, revisioni dei preventivi, chiusi e realizzati, appuntamenti in calendario.</p></div>
+</section>
+
+<h2 id="beta">Come partecipare alla beta</h2>
+<ol class="passi">
+<li><b>Richiedi l'accesso</b> con il pulsante qui sopra, indicando l'email del tuo Apple ID.</li>
+<li><b>Installa TestFlight</b>, l'app gratuita di Apple per le versioni di prova, dall'App Store.</li>
+<li><b>Apri l'invito</b> che ricevi e installa FV Business.</li>
+<li><b>Mandaci i tuoi suggerimenti</b>: fai uno screenshot e tocca "Condividi feedback beta".</li>
+</ol>
+<p class="nota">Le stime di producibilità e risparmio sono previsionali e non sostituiscono la progettazione di un tecnico abilitato.</p>
+
+<footer><span>© 2026 EIA – Engineering &amp; Intelligence Alliance</span>
+<span><a href="privacy.html">Privacy Policy</a> · <a href="termini.html">Termini di Servizio</a> · <a href="mailto:supporto.eia@gmail.com">supporto.eia@gmail.com</a></span></footer>
+</div></body></html>
