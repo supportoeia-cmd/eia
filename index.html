@@ -128,7 +128,7 @@ footer a{color:var(--testo2);text-decoration:none;margin-left:16px}footer a:hove
 function mostraVuoto(){document.getElementById('contenitoreVideo').innerHTML='<div class="vuoto"><b>Video in arrivo</b>Presto qui la dimostrazione dell\'app.</div>';}
 (function(){var v=document.querySelector('#contenitoreVideo video');if(v){v.addEventListener('error',mostraVuoto,true);
 fetch('video.mp4',{method:'HEAD'}).then(function(r){if(!r.ok)mostraVuoto();}).catch(mostraVuoto);}})();
-var ID="INSERISCI_ID";
+var ID="mzeeeydz";
 document.getElementById('modulo').addEventListener('submit',function(e){
  e.preventDefault();var f=e.target,es=document.getElementById('esito');es.className='esito';
  if(!f.nome.value.trim()||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.email.value)){es.textContent='Inserisci nome ed email validi.';es.className='esito ko';return;}
